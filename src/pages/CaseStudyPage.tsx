@@ -19,46 +19,48 @@ export default function CaseStudyPage() {
       <SEO
         title={study.title}
         description={study.description}
-        keywords={`case study, ${study.category.toLowerCase()}, success story`}
+        keywords={`case study, ${study.industry.toLowerCase()}, success story`}
         path={study.href}
-        image={study.imageUrl}
+        image={study.image}
       />
       <PageHeader title={study.title} description={study.description} />
       
       <Suspense fallback={<PageLoading />}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <img
-            src={study.imageUrl}
+            src={study.image}
             alt={study.title}
             className="w-full h-[400px] object-cover rounded-xl mb-12"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {study.results.map((result, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <p className="text-3xl font-bold text-indigo-600">{result.value}</p>
-                <p className="text-gray-600 mt-2">{result.metric}</p>
+                <p className="text-lg font-bold text-indigo-600">{result}</p>
               </div>
             ))}
           </div>
 
           <div className="prose prose-indigo max-w-none">
-            <h2>Challenge</h2>
+            <h2>Industry</h2>
+            <p className="text-gray-600">{study.industry}</p>
+
+            <h2>Services</h2>
+            <ul className="list-disc pl-4 text-gray-600">
+              {study.services.map((service, index) => (
+                <li key={index}>{service}</li>
+              ))}
+            </ul>
+
+            <h2>Challenge & Solution</h2>
             <p className="text-gray-600">
               {study.description}
-            </p>
-
-            <h2>Solution</h2>
-            <p className="text-gray-600">
-              Our team developed a comprehensive strategy tailored to the client's needs...
             </p>
 
             <h2>Results</h2>
             <ul className="list-disc pl-4 text-gray-600">
               {study.results.map((result, index) => (
-                <li key={index}>
-                  Achieved {result.value} in {result.metric.toLowerCase()}
-                </li>
+                <li key={index}>{result}</li>
               ))}
             </ul>
           </div>

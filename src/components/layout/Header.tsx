@@ -37,7 +37,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/get-started"
               className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors"
             >
               Get Started
@@ -72,7 +72,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/get-started"
               className="block w-full text-center bg-indigo-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-indigo-700"
               onClick={() => setIsMenuOpen(false)}
             >
