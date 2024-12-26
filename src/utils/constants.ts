@@ -1,11 +1,11 @@
 export const SITE_CONFIG = {
-  name: 'PioneerDigital',
-  domain: 'pioneerdigital.com',
+  name: 'PioneraDigital',
+  domain: 'pioneradigital.com',
   description: 'Transform your digital presence with cutting-edge marketing strategies',
   social: {
-    twitter: '@pioneerdigital',
-    facebook: 'pioneerdigital',
-    linkedin: 'pioneer-digital',
+    twitter: '@pioneradigital',
+    facebook: 'pioneradigital',
+    linkedin: 'pioneradigital',
   },
 } as const;
 
