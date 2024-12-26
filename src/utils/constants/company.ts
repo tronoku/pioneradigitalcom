@@ -1,5 +1,5 @@
 export const COMPANY_INFO = {
-  name: 'PioneerDigital',
+  name: 'PioneraDigital',
   address: {
     street: '1239 Broadway',
     city: 'New York',
@@ -9,10 +9,10 @@ export const COMPANY_INFO = {
   },
   contact: {
     phone: '+1 212-337-8870',
-    email: 'contact@pioneerdigital.com',
+    email: 'contact@pioneradigital.com',
   },
   social: {
-    twitter: '@pioneerdigital',
-    linkedin: 'pioneer-digital',
+    twitter: '@pioneradigital',
+    linkedin: 'pioneradigital',
   },
 } as const;
