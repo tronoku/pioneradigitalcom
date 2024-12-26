@@ -21,7 +21,7 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Rocket className="h-8 w-8 text-indigo-600" />
-              <span className="text-xl font-bold text-gray-900">PioneerDigital</span>
+              <span className="text-xl font-bold text-gray-900">PioneraDigital</span>
             </Link>
           </div>
 
